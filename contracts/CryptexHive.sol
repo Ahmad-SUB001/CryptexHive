@@ -1,17 +1,4 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
-
-/**
- * @title CryptexHive
- * @dev A decentralized vault system where users can deposit and withdraw Ether securely.
- *      The contract maintains individual balances and allows the owner to view total deposits.
- */
-contract CryptexHive {
-    address public owner;
-    mapping(address => uint256) private userBalances;
-    uint256 private totalVaultBalance;
-
-    // Events
+Events
     event Deposited(address indexed user, uint256 amount);
     event Withdrawn(address indexed user, uint256 amount);
 
@@ -58,4 +45,6 @@ contract CryptexHive {
         return totalVaultBalance;
     }
 }
-
+// 
+update
+// 
